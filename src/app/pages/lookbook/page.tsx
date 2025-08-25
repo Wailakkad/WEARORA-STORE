@@ -1,7 +1,15 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import LookbookSection from '@/components/LookbookSection';
+import { useRouter } from 'next/navigation';
 export default function HeroPage() {
+  const router = useRouter();
+
+  const HandleRouter = ()=>{
+    router.push("/pages/men")
+
+  }
   return (
     <>
     <div className="min-h-screen relative overflow-hidden">
@@ -40,8 +48,8 @@ export default function HeroPage() {
 
         {/* Bottom Right CTA Button */}
         <div className="flex justify-end pb-8 md:pb-16">
-          <button className="bg-black text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors duration-300 text-sm md:text-base z-10">
-            EXPLORE
+          <button onClick={HandleRouter} className="bg-black text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors duration-300 text-sm md:text-base z-10">
+            SHOP NOW
           </button>
         </div>
 

@@ -52,12 +52,7 @@ export default function EditorialMosaic() {
           alt="Editorial Image 2"
           className="w-full h-full  object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        {/* Watermark */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="text-white/10 text-6xl md:text-8xl font-bold tracking-wider">
-            WEARORA®
-          </div>
-        </div>
+        
       </motion.div>
     </div>
   )

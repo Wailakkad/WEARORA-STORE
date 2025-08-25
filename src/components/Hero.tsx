@@ -10,7 +10,7 @@ export default function Hero() {
       {/* Background Video */}
       <div className="absolute inset-0">
         <video
-          src="/vedio.mp4"
+          src="/VE.mp4"
           autoPlay
           loop
           muted
@@ -32,7 +32,7 @@ export default function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
           >
-            <Button href="/shop" size="lg" className="bg-white text-black hover:bg-black hover:text-white px-8 py-3 mt-80 text-base font-medium duration-300">
+            <Button href="/shop" size="lg" className="bg-white text-black hover:bg-black hover:text-white px-8 py-3 mt-160 text-base font-medium duration-300">
               SHOP NOW
             </Button>
           </motion.div>

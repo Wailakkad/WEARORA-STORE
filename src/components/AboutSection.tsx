@@ -1,5 +1,8 @@
+"use client"
+
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 interface AboutSectionProps {
   imageUrl: string;
@@ -10,6 +13,11 @@ const AboutSection: React.FC<AboutSectionProps> = ({
   imageUrl,
   imageAlt
 }) => {
+  const router = useRouter();
+  
+  const handleNavigate = () => {
+    router.push('/pages/about');
+  };
   return (
     <section className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -29,26 +37,29 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           {/* Right Column - Content */}
           <div className="flex flex-col justify-center space-y-8">
             <h2 className="text-4xl lg:text-5xl font-bold text-black leading-tight">
-              About The Band
+              About WEARORA
             </h2>
             
             <div className="space-y-6 text-lg leading-relaxed text-gray-700 max-w-prose">
               <p>
-                We are a passionate collective of musicians united by our love for creating unforgettable sonic experiences. Born from late-night jam sessions and a shared vision of pushing musical boundaries, our band has evolved into something truly special.
+                At WEARORA, we believe clothing is more than fabric - it's an expression of your inner confidence, your personal energy, and your unique aura. We create pieces that empower you to showcase your authentic self to the world.
               </p>
               
               <p>
-                Our sound is a unique fusion that draws from classic rock foundations while embracing modern electronic elements and world music influences. Each member brings their own musical heritage and expertise, creating a rich tapestry of sound that resonates with audiences across generations.
+                Our carefully curated collections blend contemporary design with timeless elegance, ensuring that every piece not only looks exceptional but feels like an extension of who you are. From bold statement pieces to versatile everyday essentials, each garment is crafted to enhance your natural radiance.
               </p>
               
               <p>
-                From intimate acoustic sets to high-energy stadium performances, we pride ourselves on delivering authentic, emotionally charged music that connects with people on a deeper level. Every song tells a story, every performance is a journey.
+                We're more than a fashion brand - we're a community of individuals who understand that true style comes from within. When you wear WEARORA, you're not just wearing clothes; you're wearing confidence, creativity, and the courage to be authentically you.
               </p>
             </div>
             
             <div className="pt-4">
-              <button className="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-colors duration-200 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-gray-300">
-                Discover Our Music
+              <button 
+                onClick={handleNavigate}
+                className="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-colors duration-200 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-gray-300"
+              >
+                MORE
               </button>
             </div>
           </div>

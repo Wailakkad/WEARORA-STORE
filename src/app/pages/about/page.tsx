@@ -2,9 +2,15 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const AboutPage = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const router = useRouter();
+  const handeRouter = ()=>{
+    router.push("/pages/men")
+
+  }
 
   useEffect(() => {
     setIsLoaded(true);
@@ -142,7 +148,7 @@ const AboutPage = () => {
               </p>
               
               <div className={`flex flex-wrap gap-4 ${isLoaded ? 'animate-fade-in-up stagger-3' : ''}`}>
-                <button className="bg-gray-900 text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-all duration-300 hover-lift hover-scale hover:shadow-lg">
+                <button onClick={handeRouter} className="bg-gray-900 text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-all duration-300 hover-lift hover-scale hover:shadow-lg">
                   Discover Collection
                 </button>
                 <button className="border-2 border-gray-900 text-gray-900 px-8 py-4 rounded-lg font-medium hover:bg-gray-900 hover:text-white transition-all duration-300 hover-lift">
