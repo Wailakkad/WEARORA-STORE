@@ -11,7 +11,7 @@ export const newArrivals: Product[] = [
     id: '1',
     title: 'Essential Oversized Hoodie',
     price: 89,
-    image: '/new-1.jpeg',
+    image: '/Frame 16.jpg',
     href: '/product/essential-oversized-hoodie'
   },
   {

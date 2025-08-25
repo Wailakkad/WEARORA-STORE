@@ -4,8 +4,8 @@ import ProductGrid from '@/components/ProductGrid'
 import EditorialMosaic from '@/components/EditorialMosaic'
 import PromoSplit from '@/components/PromoSplit'
 import Benefits from '@/components/Benefits'
-import BigFooterMark from '@/components/BigFooterMark'
 import Container from '@/components/Container'
+import AboutSection from '@/components/AboutSection'
 import { newArrivals, everyday } from '@/lib/products'
 
 export default function Home() {
@@ -16,10 +16,15 @@ export default function Home() {
       {/* New arrival section */}
       <section className="py-12 md:py-18">
         <Container>
-          <SectionHeading title="New arrival" href="/new-arrivals" />
+          <SectionHeading title="New arrival" href="/pages/men" />
           <ProductGrid products={newArrivals} />
         </Container>
       </section>
+
+     <section>
+        <AboutSection imageUrl='/look4.jpeg' imageAlt='about image'/>
+     </section>
+      
 
       {/* Headline band */}
       <section className="py-12 md:py-18">
@@ -50,7 +55,7 @@ export default function Home() {
       {/* WEARORA in everyday */}
       <section className="py-12 md:py-18">
         <Container>
-          <SectionHeading title="WEARORA in everyday" href="/everyday" />
+          <SectionHeading title="WEARORA in everyday" href="/pages/women" />
           <ProductGrid products={everyday} />
         </Container>
       </section>
