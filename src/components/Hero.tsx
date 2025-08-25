@@ -7,13 +7,18 @@ import Button from './Button'
 export default function Hero() {
   return (
     <section className="relative h-screen min-h-[700px] overflow-hidden">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0">
-        <img
-          src="/heee.jpg"
-          alt="WEARORA Hero - Performance Redefined"
-          className="w-full  object-cover p-20"
-        />
+        <video
+          src="/vedio.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-[1000px] object-cover p-20"
+        >
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       {/* Content Overlay */}
@@ -27,7 +32,7 @@ export default function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
           >
-            <Button href="/pages/men" size="lg" className="bg-white text-balck hover:bg-gray-900 hover:text-white hover:border-2 px-8 py-3 text-base font-medium mt-120">
+            <Button href="/shop" size="lg" className="bg-white text-black hover:bg-black hover:text-white px-8 py-3 mt-80 text-base font-medium duration-300">
               SHOP NOW
             </Button>
           </motion.div>
@@ -41,7 +46,7 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.6 }}
         className="absolute bottom-8 right-8 text-white text-sm mr-20 font-light tracking-wide"
       >
-        Performance. Redefined.
+        AURA
       </motion.div>
     </section>
   )
