@@ -11,35 +11,35 @@ export const newArrivals: Product[] = [
     id: '1',
     title: 'Essential Oversized Hoodie',
     price: 89,
-    image: '/Frame 16.jpg',
+    image: '/new11.jpg',
     href: '/product/essential-oversized-hoodie'
   },
   {
     id: '2',
     title: 'Essential Oversized Hoodie',
     price: 89,
-    image: '/new-2.jpeg',
+    image: '/Frame12.jpg',
     href: '/product/essential-oversized-hoodie-sage'
   },
   {
     id: '3',
     title: 'Essential Cut-Sew Hoodie',
     price: 109,
-    image: '/new-3.jpeg',
+    image: '/f22.jpg',
     href: '/product/essential-cut-sew-hoodie'
   },
   {
     id: '4',
     title: 'Essential Oversized Hoodie',
     price: 89,
-    image: '/new-4.jpeg',
+    image: '/streett.jpg',
     href: '/product/essential-oversized-hoodie-taupe'
   },
   {
     id: '5',
     title: 'Essential Oversized Hoodie',
     price: 89,
-    image: '/new-5.jpeg',
+    image: '/au33.jpg',
     href: '/product/essential-oversized-hoodie-cream'
   }
 ];
@@ -49,35 +49,35 @@ export const everyday: Product[] = [
     id: '6',
     title: 'Essential Oversized Hoodie',
     price: 89,
-    image: '/everyday-1.png',
+    image: '/Fame1.jpg',
     href: '/product/essential-oversized-hoodie-charcoal'
   },
   {
     id: '7',
     title: 'Essential Oversized Hoodie',
     price: 89,
-    image: '/everyday-2.jpeg',
+    image: '/Fame2.jpg',
     href: '/product/essential-oversized-hoodie-olive'
   },
   {
     id: '8',
     title: 'Essential Oversized Hoodie',
     price: 89,
-    image: '/everyday-3.jpeg',
+    image: '/Fame3.jpg',
     href: '/product/essential-oversized-hoodie-sand'
   },
   {
     id: '9',
     title: 'Essential Oversized Hoodie',
     price: 89,
-    image: '/everyday-4.jpeg',
+    image: '/Fame4.jpg',
     href: '/product/essential-oversized-hoodie-mocha'
   },
   {
     id: '10',
     title: 'Essential Oversized Hoodie',
     price: 89,
-    image: '/everyday-5.jpeg',
+    image: '/styducut.jpg',
     href: '/product/essential-oversized-hoodie-mocha'
   }
 ];
