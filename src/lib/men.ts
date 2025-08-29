@@ -179,7 +179,22 @@ export const products = [
       { image: "/men/confidentZome.jpg", alt: "Sleeve detail", description: "Premium cotton stitching." }
     ]
   },
-
+   {
+    id: 18,
+    name: "AURA Snake – Fierce Streetwear Motivation Design T-Shirt",
+    category: "T-Shirts",
+    aura: "Creative Aura",
+    price: 16.26,
+    sizes: ["S", "M", "L", "XL" ,"2XL", "3XL" , "4XL" , "5XL"],
+    mainImage: "/men/snake.jpg",
+    description: "Channel raw power and energy with this bold streetwear design! Featuring a ferocious snake with fangs bared, surrounded by glowing neon aura flames in purple and blue, this artwork screams strength and motivation. The Gothic blackletter “AURA” headline and the tagline “Unleash the power within” make it perfect for fans of street fashion, edgy art, and motivational designs. Ideal for T-shirts, hoodies, stickers, and posters, this piece combines gritty textures, Gothic typography, and urban streetwear vibes—making it a must-have for anyone who loves bold fashion, motivational energy, and striking snake-inspired designs.",
+    link: "https://www.teepublic.com/t-shirt/79523913-aura-snake-fierce-streetwear-motivation-design?store_id=4018970",
+    details: [
+      { image: "/men/snak1.png", alt: "Front view", description: "Front creative print with color accents." },
+      { image: "/men/snak2.png", alt: "Back view", description: "Minimal back with logo." },
+    ]
+  },
+  
   // 3.Hats
   {
     id: 10,
